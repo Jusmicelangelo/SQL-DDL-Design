@@ -17,6 +17,9 @@ CREATE TABLE planets
   moons TEXT[]
 );
 
+-- I would not optimize this code as the moons are more a "set" in comparison to the planet
+-- downside of course moons can disappear or be renamed 
+
 INSERT INTO planets
   (name, orbital_period_in_years, orbits_around, galaxy, moons)
 VALUES
